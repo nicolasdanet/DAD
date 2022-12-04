@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Xfcpw0" name="DAD" projectType="consoleapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="XLNl94" name="DAD">
+    <GROUP id="{6FBE6FD9-6B67-8884-57DA-E1C1DF24049D}" name="Source">
+      <FILE id="i0vAkt" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="tynAob" name="CSV.hpp" compile="0" resource="0" file="Source/CSV.hpp"/>
+      <FILE id="nVwhoQ" name="Time.hpp" compile="0" resource="0" file="Source/Time.hpp"/>
+      <FILE id="Keo5Na" name="Image.hpp" compile="0" resource="0" file="Source/Image.hpp"/>
+      <FILE id="hK2mbb" name="Image.cpp" compile="1" resource="0" file="Source/Image.cpp"/>
+      <FILE id="p7ynp9" name="Log.hpp" compile="0" resource="0" file="Source/Log.hpp"/>
+      <FILE id="guMXZW" name="Log.cpp" compile="1" resource="0" file="Source/Log.cpp"/>
+      <FILE id="ePpnIg" name="Element.hpp" compile="0" resource="0" file="Source/Element.hpp"/>
+      <FILE id="cZwbIQ" name="Sequence.hpp" compile="0" resource="0" file="Source/Sequence.hpp"/>
+      <FILE id="vaxAaX" name="Sequence.cpp" compile="1" resource="0" file="Source/Sequence.cpp"/>
+      <FILE id="cy9bYh" name="exif.h" compile="0" resource="0" file="Source/exif.h"/>
+      <FILE id="oYpAYg" name="exif.cpp" compile="1" resource="0" file="Source/exif.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraCompilerFlags="-Wall &#10;-Wextra &#10;-Wshadow">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="dad"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="dad"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraCompilerFlags="-Wall&#10;-Wextra&#10;-Wshadow">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="dad"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="dad"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+  </MODULES>
+</JUCERPROJECT>

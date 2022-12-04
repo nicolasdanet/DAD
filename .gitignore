@@ -1,0 +1,6 @@
+.DS_Store
+makefile.dependencies
+*.sublime-workspace
+xcuserdata/
+DAD/Builds/MacOSX/build/
+DAD/Builds/LinuxMakefile/build/
